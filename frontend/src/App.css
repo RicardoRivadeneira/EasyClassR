@@ -25,10 +25,25 @@
 
 .curso {
   cursor: pointer;
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: calc(25% - 20px); /* Ajuste para 4 cursos por fila con espacio entre ellos */
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+  /* Establecer un alto fijo o máximo para el contenedor */
+  max-height: 300px; /* Ajusta según tus necesidades */
+  max-width: 200px;;
+  overflow: hidden; /* Oculta el contenido que exceda el alto máximo */
 }
+
+.curso h3, .curso p {
+  /* Asegura que el texto no se extienda más allá de una línea */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0; /* Ajusta los márgenes si es necesario */
+}
+
+
 
 .curso img {
   max-width: 100%;
@@ -56,7 +71,6 @@
 .boton-agregar:hover {
   background-color: #45a049;
 }
-
 .Modal {
   position: absolute;
   top: 50%;
@@ -83,3 +97,15 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+/* src/App.css */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}

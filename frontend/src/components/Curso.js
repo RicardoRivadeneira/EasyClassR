@@ -1,16 +1,19 @@
+// src/components/Curso.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Curso = ({ curso, onClick }) => {
-    const { nombre, descripcion, imagen } = curso;
-    // Asegúrate de que la URL de la imagen apunte a la ubicación correcta en tu servidor
-    const imageUrl = imagen ? `http://localhost:3001/${imagen}` : 'default-image.jpg'; // Reemplaza 'default-image.jpg' con una imagen predeterminada si lo deseas
+const Curso = ({ curso }) => {
+    const { id, nombre, descripcion, imagen } = curso;
+    const imageUrl = imagen ? `http://localhost:3001/${imagen}` : 'default-image.jpg';
 
     return (
-        <div className="curso" onClick={() => onClick(curso)}>
-            <img src={imageUrl} alt={nombre} style={{ maxWidth: '200px', maxHeight: '200px' }} />
-            <h3>{nombre}</h3>
-            <p>{descripcion}</p>
-        </div>
+        <Link to={`/curso/${id}`}>
+            <div className="curso">
+                <img src={imageUrl} alt={nombre} style={{ maxWidth: '200px', maxHeight: '200px' }} />
+                <h3>{nombre}</h3>
+                <p>{descripcion}</p>
+            </div>
+        </Link>
     );
 };
 
