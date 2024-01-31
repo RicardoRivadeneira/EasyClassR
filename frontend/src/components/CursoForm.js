@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CursoForm.css'; // Asegúrate de crear este archivo
+import './CursoForm.css'; 
 
 const CursoForm = ({ onSubmit }) => {
     const [nombre, setNombre] = useState('');
