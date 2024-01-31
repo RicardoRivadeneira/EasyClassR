@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Curso de HTML",
+    "imagen": "uploads\\cursohtml.jpg",
+    "descripcion": "Aprende HTML desde cero..."
+  },
+  {
+    "id": 2,
+    "nombre": "Curso de CSS",
+    "imagen": "uploads\\cursocss.jpg",
+    "descripcion": "Aprende CSS desde cero..."
+  },
+  {
+    "id": 3,
+    "nombre": "Curso de JavaScript",
+    "imagen": "uploads\\cursojs.jpg",
+    "descripcion": "Aprende JavaScript desde cero..."
+  },
+  {
+    "id": 4,
+    "nombre": "Curso de React",
+    "imagen": "uploads\\cursoreact.jpg",
+    "descripcion": "Aprende React desde cero..."
+  },
+  {
+    "nombre": "Curso de Pruebas",
+    "descripcion": "Se verán pruebas estáticas y Dinámicas",
+    "imagen": "uploads\\imagen-1706676770320.jpg",
+    "id": 5
+  }
+]
