@@ -12,7 +12,7 @@ Este proyecto es una aplicación web que permite a los usuarios visualizar, agre
 ## Estructura del Proyecto
 
 El proyecto está organizado en dos directorios principales: `backend` y `frontend`.
-
+``` markdown
 EasyClass/
 ├── backend/
 │   ├── node_modules/
@@ -49,7 +49,7 @@ EasyClass/
 │   └── .env
 │
 └── README.md
-
+```
 
 
 ## Comando para el funcionamiento
